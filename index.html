@@ -1,21 +1,133 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>履歷</title>
-		<style>
-			body
-			{
-				width : 80%;
-				margin : 0 auto;
-			}
-		</style>
-	</head>
-	<body>
-		<br>
-		<h1 style="text-align: center">Chi-Jui Lee / 李啓睿</h1>
-		<br>
-		<hr>
-		<p>testtest</p>
-		
-		
-	</body>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>履歷 - Chi-Jui Lee</title>
+    <style>
+        /* 全域設定：讓字體好看一點，背景柔和一點 */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
+            width: 80%;
+            max-width: 800px; /* 限制最大寬度，大螢幕閱讀較舒適 */
+            margin: 40px auto;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* 標題樣式 */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        /* 裝飾線 */
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+            margin-bottom: 40px;
+        }
+
+        /* 內容區塊卡片設計：加上陰影與圓角 */
+        .section-card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px; /* 圓角 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 輕微陰影 */
+        }
+
+        /* 列表樣式 */
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 強調文字 */
+        .highlight {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e1ecf4;
+            color: #39739d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chi-Jui Lee / 李啓睿</h1>
+    <p style="text-align: center; color: #666;">軟體工程師 | 資料結構與演算法愛好者</p>
+    <hr>
+
+    <div class="section-card">
+        <h2>學習目標與動機</h2>
+        <p>
+            致力於深入理解電腦科學的基石。透過系統化地學習資料結構，不僅是為了應付面試，更是為了在實際開發中能夠針對不同場景選擇<span class="highlight">最優化的解決方案</span>，提升程式的執行效率與記憶體管理能力。
+        </p>
+    </div>
+
+    <div class="section-card">
+        <h2>資料結構學習歷程</h2>
+        
+        <h3>第一階段：基礎奠基 (Foundation)</h3>
+        <p>熟悉記憶體操作與基本的線性資料結構。</p>
+        <ul>
+            <li><span class="tag">Arrays</span> 理解記憶體連續性與索引存取優勢。</li>
+            <li><span class="tag">Linked Lists</span> 實作單向與雙向鏈結串列，掌握指標操作。</li>
+            <li><span class="tag">Stack & Queue</span> 應用於遞迴控制與任務排程管理。</li>
+        </ul>
+
+        <br>
+
+        <h3>第二階段：進階結構與樹 (Trees & Hierarchies)</h3>
+        <p>處理非線性資料與層級關係，學習遞迴思維。</p>
+        <ul>
+            <li><span class="tag">Binary Search Tree (BST)</span> 學習搜尋、新增與刪除的邏輯。</li>
+            <li><span class="tag">Heaps</span> 實作 Priority Queue，應用於排序與排程問題。</li>
+            <li><span class="tag">AVL / Red-Black Tree</span> (進階) 理解自平衡樹如何維持搜尋效率在 O(log n)。</li>
+        </ul>
+
+        <br>
+
+        <h3>第三階段：複雜網絡與雜湊 (Graphs & Hashing)</h3>
+        <p>解決複雜連接問題與快速查找。</p>
+        <ul>
+            <li><span class="tag">Hash Tables</span> 處理雜湊碰撞 (Collision)，理解平均 O(1) 的查找速度。</li>
+            <li><span class="tag">Graphs</span> 實作 BFS (廣度優先) 與 DFS (深度優先) 遍歷算法。</li>
+            <li>學習最短路徑演算法 (Dijkstra) 與最小生成樹 (MST)。</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>核心體悟</h2>
+        <p>
+            學習資料結構後，我學會了使用 <span class="highlight">Big O Notation</span> 來分析時間複雜度與空間複雜度。現在在撰寫程式碼時，我會習慣性地評估：「這段迴圈是否造成了效能瓶頸？」以及「是否有更適合的結構來儲存這筆資料？」。
+        </p>
+    </div>
+
+</body>
+</html>
