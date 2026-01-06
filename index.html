@@ -14,6 +14,27 @@
             line-height: 1.6;
             background-color: #f9f9f9;
         }
+        /* 新增：個人資料專用的排版 */
+        .info-row {
+            display: flex; /* 讓標籤與內容並排 */
+            padding: 12px 0; /* 每一行的上下間距 */
+            border-bottom: 1px dashed #eee; /* 每行下面加一條虛線分隔 */
+        }
+
+        .info-row:last-child {
+            border-bottom: none; /* 最後一行不要分隔線 */
+        }
+
+        .info-label {
+            flex: 0 0 100px; /* 左邊標籤固定寬度 100px */
+            font-weight: bold;
+            color: #555;
+        }
+
+        .info-value {
+            flex: 1; /* 右邊內容佔滿剩餘空間 */
+            color: #222;
+        }
 
         /* 標題樣式 */
         h1 {
@@ -84,11 +105,38 @@
     <hr>
 
     <div class="section-card">
-        <h2>學習目標與動機</h2>
-        <p>
-            致力於深入理解電腦科學的基石。透過系統化地學習資料結構，不僅是為了應付面試，更是為了在實際開發中能夠針對不同場景選擇<span class="highlight">最優化的解決方案</span>，提升程式的執行效率與記憶體管理能力。
-        </p>
+        <h2>學生資料</h2>
+        
+        <div class="info-row">
+            <div class="info-label">姓名</div>
+            <div class="info-value">Chi-Jui Lee / 李啓睿</div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-label">就讀學校</div>
+            <div class="info-value">OO大學</div> </div>
+
+        <div class="info-row">
+            <div class="info-label">系級/學號</div>
+            <div class="info-value">資訊工程學系 / 110xxxxxx</div> </div>
+
+        <div class="info-row">
+            <div class="info-label">Email</div>
+            <div class="info-value">your.email@example.com</div> </div>
+
+        <div class="info-row">
+            <div class="info-label">GitHub</div>
+            <div class="info-value">
+                <a href="https://github.com/你的ID" target="_blank">github.com/你的ID</a>
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-label">專長領域</div>
+            <div class="info-value">Python, FPGA Design, Data Structures</div>
+        </div>
     </div>
+
 
     <div class="section-card">
         <h2>資料結構學習歷程</h2>
